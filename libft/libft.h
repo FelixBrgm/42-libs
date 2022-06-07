@@ -6,7 +6,7 @@
 /*   By: fbruggem <fbruggem@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 08:50:35 by fbruggem          #+#    #+#             */
-/*   Updated: 2022/06/07 16:23:30 by fbruggem         ###   ########.fr       */
+/*   Updated: 2022/06/07 16:27:44 by fbruggem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 int		ft_2ptrlen(void **ptr);
+int		ft_protect(int n, ...);
+
 #endif
