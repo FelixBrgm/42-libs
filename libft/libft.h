@@ -6,7 +6,7 @@
 /*   By: fbruggem <fbruggem@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 08:50:35 by fbruggem          #+#    #+#             */
-/*   Updated: 2022/05/14 10:33:54 by fbruggem         ###   ########.fr       */
+/*   Updated: 2022/06/07 16:23:30 by fbruggem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include "../printf/printf.h"
 
 typedef struct s_list
 {
