@@ -6,7 +6,7 @@
 /*   By: fbruggem <fbruggem@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 16:28:53 by fbruggem          #+#    #+#             */
-/*   Updated: 2022/03/31 13:58:30 by fbruggem         ###   ########.fr       */
+/*   Updated: 2022/07/07 11:49:36 by fbruggem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		haystack++;
 	}
-	return (0);
+	return (NULL);
 }
