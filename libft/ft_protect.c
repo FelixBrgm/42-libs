@@ -6,7 +6,7 @@
 /*   By: fbruggem <fbruggem@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 16:12:41 by fbruggem          #+#    #+#             */
-/*   Updated: 2022/06/07 16:50:24 by fbruggem         ###   ########.fr       */
+/*   Updated: 2022/10/24 14:52:20 by fbruggem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_protect(int n, ...)
 	int		i;
 
 	ptr = ft_calloc(n, sizeof(void *));
-	if (!ptr)
+	if (ptr == NULL)
 		return (-1);
 	va_start(list, n);
 	i = 0;
@@ -30,7 +30,7 @@ int	ft_protect(int n, ...)
 	va_end(list);
 	i = 0;
 	while (i < n)
-		if (!ptr[i++])
+		if (ptr[i++] == NULL)
 			return (del_ptr(ptr, n));
 	free(ptr);
 	return (0);
